@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link href="css/lightbox.css" rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     
    
     <meta name="author" content="Lucie Budínová">
@@ -19,7 +19,7 @@
 <body class="container">      
     <header>
         <div class="jumbo pt-3 pb-5 px-2 px-sm-5">
-            <img class="logo img-fluid border border-black rounded-circle" src="images/logo.jpg" alt="Logo Společný stůl z.s., návrat k začátku stránky">
+            <img class="logo img-fluid border border-black rounded-circle" src="images/logo.jpg" alt="Logo Společný stůl z.s.">
             <div class="jumbo-text container-fluid px-2 px-sm-4 py-4 w-75">
                 <h1 class="display-5 fw-bold mb-3">Společný stůl z.s.</h1>
                 <div>
@@ -30,8 +30,8 @@
                 </h5>
             </div>              
         </div>
+        <!--navigace- bootstrap-nav-tabs-tab JS plugin-->
         <nav class="navbar navbar-expand-lg d-flex justify-content-center p-0">
-            
                 <ul class="nav nav-tabs d-flex" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
                         <button class="nav-link active" id="nav-link-first" data-bs-toggle="tab" data-bs-target="#about-us" type="button" role="tab" aria-selected="true">O nás</button>
@@ -46,18 +46,15 @@
                         <button class="nav-link" id="nav-link-fourth" data-bs-toggle="tab" data-bs-target="#kontakty" type="button" role="tab" aria-selected="true">Kontakty</button>
                     </li>
                 </ul>
-            
         </nav>
-        
     </header>
     
     
-        
+     <!--Sekce o nás- hlavní charakteristika, chůvy, výroční zprávy-->   
     <div class="tab-content" id="myTabContent"> 
-        
         <article class="container collapse tab-pane fade show active" role="tabpanel" aria-labelledby="nav-link-first" tabindex="0" id="about-us">
-            <h2>O nás</h2>
             <section>
+                <h2>O nás</h2>
                 <div mb-2>
                     Klub Hrajánek zahájil svou činnost v lednu 2017 pod ČMP. Velký zájem ze strany rodičů i dětí vedl k rozšíření aktivit Klubu Hrajánek a tak přechází jeho činnost od července 2020 pod Rodinné centrum Společný stůl, z.s..
 
@@ -79,7 +76,7 @@
                     
                     </li>
                     <li>
-                        Při své činnosti vychází z pedagogiky Franze Ketta. Více na <a class="odkaz" href="http://www.kett.cz/clanky/hlavni" target="_blank">www.kett.cz</a>
+                        Při své činnosti vychází z pedagogiky Franze Ketta. Více na <a class="link" href="http://www.kett.cz/clanky/hlavni" target="_blank">www.kett.cz</a>
                     </li>
                 </ul>
                 <h4>Děti</h4>
@@ -97,10 +94,10 @@
                         Samozřejmě také navazují nové kontakty s dalšími rodiči a tráví v herně příjemné chvíle buď při společném nebo individuálním programu. Rodiče mohou doprovázet dítě v kolektivu a pomáhat mu. Když pak dítě tráví čas v dětském klubu samostatně, maminky mají možnost -po následné konzultaci- zjistit silné a slabé stránky svého dítěte v této nové situaci. Podle toho mohou směřovat svá rozhodnutí ohledně nástupu dítěte do kolektivního zařízení. 
                         
                     </div>
-                    <div id="long" style="display:none;">
+                    <div id="longTextParents" style="display:none;">
                         V neposlední řadě, pokud se adaptace dítěte v dětském klubu povede (a to bývá dost často), přináší čas, který má rodič pro sebe, velkou vzpruhu a pomoc. Jedná se o 1-4hodiny nebo i více podle potřeb dítěte a rodiče. Pokud je třeba delší doba- záleží na domluvě s ohledem na dítě.
                     </div>
-                    <a id="rozklik" href="javascript: void(0);">
+                    <a id="showLongTextParents" class="link" href="javascript: void(0);">
                         Zobrazit více/méně
                     </a>
                 </div>
@@ -112,22 +109,16 @@
                 <h3>
                     O Vaše děti se budou starat
                 </h3>
-                <div class="educators mb-2 d-flex justify-content-between">
-                    <div class="d-flex">
-                        <img class="educators-foto rounded-circle" src="images/magda2.jpg" alt="portrét vychovatelky">
-
-                    </div>
-                    <div class="align-self-center w-75">
+                <div class="educators mb-2 d-flex flex-column">
+                    <img class="educators-foto rounded-circle" src="images/Magda.jpg" alt="portrét vychovatelky, chůvy">
+                    <div class="align-self-center">
                         <h5>Magdaléna Kodymová</h5>
                         <p>V roce 1995 maturovala na  SZŠ České Budějovice, obor Dětská sestra. Od té doby pracovala 10 let v nemocnici na dětském oddělení, 3 roky pečovala o svou babičku, pracovala v městských jeslích a v Klubíku Hrajánek při ČMP. Absolvovala kurzy pedagogiky Franze Ketta a pedagogiky Marie Montessori. Je matkou 2 synů. Učím se stále více  a více přistupovat k druhému s úctou.</p>
                     </div>
                 </div>
-                <div class="educators mb-2 d-flex justify-content-between">
-                    <div class="d-flex">
-                        <img class="educators-foto rounded-circle" src="images/Zdenka1.jpg" alt="portrét vychovatelky">
-
-                    </div>
-                    <div class="align-self-center w-75">
+                <div class="educators mb-2 d-flex flex-column">
+                    <img class="educators-foto rounded-circle" src="images/Zdenka1.jpg" alt="portrét vychovatelky, chůvy">
+                    <div class="align-self-center">
                         <h5>Mgr. Zdeňka Jarošíková</h5>
                         <p>Vystudovala Střední zdravotnickou školu - obor všeobecná sestra,
                             Jihočeskou univerzitu v Českých Budějovicích Zdravotně sociální fakultu - obor:
@@ -135,12 +126,9 @@
                             zdravotní sestra Letní dětské integrační canisterapeutické tábory, Dětské tábory, Péče o autistického chlapce, instruktor plavání. S manželem vychovávají syna Jiříka.</p>
                     </div>
                 </div>
-                <div class="educators d-flex justify-content-between">
-                    <div class="d-flex">
-                        <img class="educators-foto rounded-circle" src="images/Inna.jpg" alt="portrét vychovatelky">
-
-                    </div>
-                    <div class="align-self-center w-75">
+                <div class="educators d-flex flex-column">
+                    <img class="educators-foto rounded-circle" src="images/Inna.jpg" alt="portrét vychovatelky,chůvy">
+                    <div class="align-self-center">
                         <h5>Inna Shandarova</h5>
                         <p>Absolvovala Střední odbornou školu zdravotnickou města Melitopol, obor všeobecná
                             zdravotní sestra -mám nostrifikaci. Vystudovala Pedagogickou fakultu na univerzitě města Melitopol, obor učitelka biologie a ekologie. S manželem vychovali jednu vlastní dceru a nyní vychovávají dvě dcery adoptované. V Hrajánku Inna pracuje od ledna 2022. U dětí je velmi oblíbená a svou pracovitostí zachrání vše.</p>
@@ -150,9 +138,9 @@
             <section class="font-weight-bold mt-5 mb-2">
                 <h3>Výroční zprávy</h3>
                 <div>
-                    <a class="odkaz" href="vyrocni_zprava_2020.pdf" download="Vyrocni_zprava_Spolecny_stul_2020.pdf">Výroční zpráva rok 2020,</a>
-                    <a class="odkaz" href="vyrocni_zprava_2021.pdf" download="Vyrocni_zprava_Spolecny_stul_2021.pdf">Výroční zpráva rok 2021,</a>
-                    <a class="odkaz" href="vyrocni_zprava_2022.pdf" download="Vyrocni_zprava_Spolecny_stul_2022.pdf">Výroční zpráva rok 2022</a>
+                    <a class="link" href="pdf/vyrocni_zprava_2020.pdf" download="Vyrocni_zprava_Spolecny_stul_2020.pdf">Výroční zpráva rok 2020,</a>
+                    <a class="link" href="pdf/vyrocni_zprava_2021.pdf" download="Vyrocni_zprava_Spolecny_stul_2021.pdf">Výroční zpráva rok 2021,</a>
+                    <a class="link" href="pdf/vyrocni_zprava_2022.pdf" download="Vyrocni_zprava_Spolecny_stul_2022.pdf">Výroční zpráva rok 2022</a>
                 </div>
             </section>
         </article>
@@ -160,26 +148,26 @@
 
 
 
-            
-            <section id="aktivity" class="collapse tab-pane fade deti" role="tabpanel" aria-labelledby="nav-link-second" tabindex="0">
-                <nav class="navbar navbar-expand-lg secondary-menu d-flex justify-content-center p-0">
-                    <ul class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link active" id="secondary-nav-link-first" data-bs-toggle="tab" data-bs-target="#herna" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Herna</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="secondary-nav-link-second" data-bs-toggle="tab" data-bs-target="#klub" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Klub Skřítek Hrajánek</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="secondary-nav-link-third" data-bs-toggle="tab" data-bs-target="#rozvrh" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Rozvrh</button>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <button class="nav-link" id="secondary-nav-link-fourth" data-bs-toggle="tab" data-bs-target="#cenik" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Ceník</button>
-                            </li>
-                    </ul>
-                </nav>
-                <article id="herna" class="collapse tab-pane fade show active" role="tabpanel" aria-labelledby="secondary-nav-link-first" tabindex="0">
-                        <h3 class="mb-3">Herna</h3>
+        <!--podmenu Hrajánka- herna, klub, ceník, rozvrh -->    
+        <article id="aktivity" class="collapse tab-pane fade deti" role="tabpanel" aria-labelledby="nav-link-second" tabindex="0">
+            <nav class="navbar navbar-expand-lg secondary-menu d-flex justify-content-center p-0">
+                <ul class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="secondary-nav-link-first" data-bs-toggle="tab" data-bs-target="#herna" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Herna</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="secondary-nav-link-second" data-bs-toggle="tab" data-bs-target="#klub" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Klub Skřítek Hrajánek</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="secondary-nav-link-third" data-bs-toggle="tab" data-bs-target="#rozvrh" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Rozvrh</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="secondary-nav-link-fourth" data-bs-toggle="tab" data-bs-target="#cenik" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Ceník</button>
+                    </li>
+                </ul>
+            </nav>
+            <section id="herna" class="collapse tab-pane fade show active" role="tabpanel" aria-labelledby="secondary-nav-link-first" tabindex="0">
+                <h3 class="mb-3">Herna</h3>
                         <div class="mb-3">
                             Setkání rodičů s dětmi -  v herně nebo na zahrádce. Herna je bohatě vybavena hezkými hračkami a knihami. Lze si vypůjčit i montessori pomůcky. Rodiče si mohou dát kávu nebo čaj a k tomu si vypůjčit knihu. Pro děti je k dispozici drobné občerstvení. V kuchyňce si lze půjčit nádobí a ohřát jídlo v mikrovlnce.
                         </div>
@@ -194,8 +182,8 @@
                             <strong>Zahrádka:</strong> 
                             <p>po-pá:  8:00 - 10:00</p>
                         </div>                         
-                    </article>
-                    <article id="klub" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-second" tabindex="0">
+            </section>
+            <section id="klub" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-second" tabindex="0">
                         <h3>Dětský klub Skřítek Hrajánek</h3>
                         <ul class="about-us-lists">
                             <li>Celodenní péče o děti, po - pá: 7:00 - 17:00 </li>
@@ -204,12 +192,12 @@
                             <li>Nenahrazuje povinné předškolní vzdělávání</li>
                         </ul>
                         <div class="mb-3">
-                            Možnost samostatného pobytu dítěte po adaptaci. Čas i délka pobytu dle domluvy. <b>Dítě je vybaveno na dobu pobytu potřebným oblečením, plenami, jídlem a pitím, vhodnou oblíbenou hračkou, knihou </b>- kterou si vyrobí spolu s rodiči doma (podle <a class="odkaz" href="images/kniha.png" download="moje-kniha.png">návodu od Hrajánka</a>).
+                            Možnost samostatného pobytu dítěte po adaptaci. Čas i délka pobytu dle domluvy. <b>Dítě je vybaveno na dobu pobytu potřebným oblečením, plenami, jídlem a pitím, vhodnou oblíbenou hračkou, knihou </b>- kterou si vyrobí spolu s rodiči doma (podle <a class="link" href="images/kniha.png" download="moje-kniha.png">návodu od Hrajánka</a>).
                         </div>
-                        <div class="stazeni mb-3">
-                            <div class="font-italic">Přihláška do dětského klubu Skřítek Hrajánek ke <a class="odkaz" href="prihlaska.pdf" download="prihlaska-hrajanek.pdf">stažení</a></div>
-                            <div class="font-italic">Vnitřní řád Rodinného centra Společný stůl z.s. ke <a class="odkaz" href="rad.pdf" download="provozni-rad-spolecny-stul.pdf">stažení</a></div>
-                            <div class="font-italic">Návod na výrobu knihy pro děti ke <a class="odkaz" href="images/kniha.png" download="moje-kniha.png">stažení</a>
+                        <div class="downloadfilesblock mb-3">
+                            <div class="font-italic mb-2">Přihláška do dětského klubu Skřítek Hrajánek ke <a class="link" href="pdf/prihlaska.pdf" download="prihlaska-hrajanek.pdf">stažení</a></div>
+                            <div class="font-italic mt-2">Vnitřní řád Rodinného centra Společný stůl z.s. ke <a class="link" href="pdf/rad.pdf" download="provozni-rad-spolecny-stul.pdf">stažení</a></div>
+                            <div class="font-italic mt-2">Návod na výrobu knihy pro děti ke <a class="link" href="images/kniha.png" download="moje-kniha.png">stažení</a>
                             </div>
                         </div>
                         <h4 class="mb-3">Ideální adaptační proces</h4>
@@ -222,14 +210,14 @@
                                 Dítě přichází do Dětského klubu s rodičem každý den (3-5dní) v  domluvený čas na 1 hodinu.
                                 Rodič sedí u stolu a "má svou práci" a dítě pomalu pozoruje nebo se zapojuje do dodění v klubu či si samostatně hraje. V tu dobu je v klubu omezený počet dětí (4 děti + chůva). 
                             </div>
-                            <div id="lo" style="display:none;">
+                            <div id="longTextAdaptation" style="display:none;">
                             
                                 Podle průběhu a po domluvě rodiče a chůvy je možné zkusit již 4. a 5. den (0,5-1h) samostatný pobyt dítěte.
                                 Nejlepší je začít s adaptací hned na začátku září, kdy ještě nejsou rozjeté kroužky a je tudíž na adaptaci čas.
                                 To, co je popsáno výše, je určitý model. Každý z nás ale - každé dítě a každý rodič i chůva - je originál. Proto je třeba opravdu postupovat individuálně, navázat vztahy- chůvy a rodiče, chůvy a děti, nebát se a věřit si navzájem.
                                 Při procesu adaptace je třeba také brát v úvahu možnosti a potřeby rodiny. 
                             </div>
-                            <a href="javascript: void(0);" id="rozklikni">
+                            <a href="javascript: void(0);" class="link" id="showLongTextAdaptation">
                                 Zobrazit více/méně
                             </a>
                         
@@ -246,97 +234,164 @@
                         <div><b>14.30 - 15.00</b>   vstávání, svačina, volná hra + nabídka výchovné činnosti; příchod dalších dětí</div>
                         <div><b>15.00  -  17.00</b>  herna nebo zahrádka - volná hra + nabídka výchovné činnosti; odchod dětí</div>
                         
-                    </article>
-                    
-                    <div id="rozvrh" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-third" tabindex="0">
-                        <h2>Rozvrh</h2>
-                        <table class="table table-striped">
-                            <tbody>
-                              <tr>
-                                <td>Herna</td>
-                                <td>po-pá: 8:00-11:30 / 15:00-17:00</td>
-                              </tr>
-                              <tr>
-                                <td>Zahrada</td>
-                                <td>po-pá: 8:00-10:00</td>
-                              </tr>
-                              <tr>
-                                <td>Dětský klub Skřítek Hrajánek</td>
-                                <td>po-pá: 7:00-17:00</td>
-                              </tr>
-                              <tr>
-                                <td>Setkání seniorů a dětí</td>
-                                <td>út: 15:00-16:00</td>
-                              </tr>
-                              <tr>
-                                <td>Přednášky pro rodiče i širokou veřejnost</td>
-                                <td>viz. náš 
-                                    <a class="odkaz" href="https://www.facebook.com/Klub%C3%ADk-Hraj%C3%A1nek-1762043547385466/" target="_blank">Facebook</a></td>
-                              </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div id="cenik" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-fourth" tabindex="0">
-                        <h2>Ceník</h2>
-                        <div class="mt-4"><b>Návštěva herny či zahrádky:</b></div>
-                        <div class="mb-3">50,-/dítě</div>
-                        <div class="mb-3">30,- každé další dítě</div>
-                        <div class="mt-4 mb-3"><b>Samostatný pobyt dítěte po adaptaci:</b></div>
-                        <div class="mb-3">75,-/1h, 150,-/2h</div>
-                        <div class="mb-3">Děti od cca 2 let: 200,-/dopoledne + 65,-(oběd, svačina)</div>
-                        <div class="mb-3">300,-/celý den + 80,-(oběd, 2x svačina)</div>
-                        <div class="mt-5"><b>Číslo účtu:</b> 1032118964 / 5500</div>
-                    </div>
-                    
-
-                </section>
-
-            <section id="foto" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="nav-link-third" tabindex="0">
-                <h2 class="mb-5">Fotogalerie</h2>
-                <div class="row no-gutters">
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/piskoviste.jpg" data-lightbox="example-set">
-                        <img src="images/piskoviste.jpg" alt="Pískoviště na zahradě" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/skritek.jpg" data-lightbox="example-set">
-                        <img src="images/skritek.jpg" alt="Venkovní kuchyňka" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/hrad.jpg" data-lightbox="example-set">
-                        <img src="images/hrad.jpg" alt="Ve vnitřních prostorách si děti mohou postavit hrad" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/kocar.jpg" data-lightbox="example-set">
-                        <img src="images/kocar.jpg" alt="Zapojit se mohou i maminky s malými miminky v kočárku" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/draha.jpg" data-lightbox="example-set">
-                        <img src="images/draha.jpg" alt="Uzavřený venkovní prostor mohou děti využít i pro ježdění na odrážedlech a kolech" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/klobouk.jpg" data-lightbox="example-set">
-                        <img src="images/klobouk.jpg" alt="Maminky i tatínkové se zapojili také při výrobě klobouků" class="img-fluid">
-                    </a>
-
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/betlem.jpg" data-lightbox="example-set">
-                        <img src="images/betlem.jpg" alt="V čase vánočním nám hernu zdobí velký betlém" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/platno.jpg" data-lightbox="example-set">
-                        <img src="images/platno.jpg" alt="Malování na plátno" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/snih.jpg" data-lightbox="example-set">
-                        <img src="images/snih.jpg" alt="Stavění sněhuláka" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/bazen.jpg" data-lightbox="example-set">
-                        <img src="images/bazen.jpg" alt="Bazének s míčky" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/kuchynka.jpg" data-lightbox="example-set">
-                        <img src="images/kuchynka.jpg" alt="Venkovní kuchyňka na hraní" class="img-fluid">
-                    </a>
-                    <a class="col-6 col-sm-4 col-md-2 mt-2" href="images/stan.jpg" data-lightbox="example-set">
-                        <img src="images/stan.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
-                    </a>
-                </div>
             </section>
+            <section id="rozvrh" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-third" tabindex="0">
+                <h2>Rozvrh</h2>
+                            <table class="table table-striped">
+                                <tbody>
+                                  <tr>
+                                    <td>Herna</td>
+                                    <td>po-pá: 8:00-11:30 / 15:00-17:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Zahrada</td>
+                                    <td>po-pá: 8:00-10:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Dětský klub Skřítek Hrajánek</td>
+                                    <td>po-pá: 7:00-17:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Setkání seniorů a dětí</td>
+                                    <td>út: 15:00-16:00</td>
+                                  </tr>
+                                  <tr>
+                                    <td>Přednášky pro rodiče i širokou veřejnost</td>
+                                    <td>viz. náš 
+                                        <a class="link" href="https://www.facebook.com/Klub%C3%ADk-Hraj%C3%A1nek-1762043547385466/" target="_blank">Facebook</a></td>
+                                  </tr>
+                                </tbody>
+                            </table>
+            </section>
+            <section id="cenik" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="secondary-nav-link-fourth" tabindex="0">
+                <h2>Ceník</h2>
+                            <div class="mt-4"><b>Návštěva herny či zahrádky:</b></div>
+                            <div class="mb-3">50,-/dítě</div>
+                            <div class="mb-3">30,- každé další dítě</div>
+                            <div class="mt-4 mb-3"><b>Samostatný pobyt dítěte po adaptaci:</b></div>
+                            <div class="mb-3">75,-/1h, 150,-/2h</div>
+                            <div class="mb-3">Děti od cca 2 let: 200,-/dopoledne + 65,-(oběd, svačina)</div>
+                            <div class="mb-3">300,-/celý den + 80,-(oběd, 2x svačina)</div>
+                            <div class="mt-5"><b>Číslo účtu:</b> 1032118964 / 5500</div>
+            </section>
+        </article>           
+        
+        
+
+        <!--fotogalerie: lightbox2 (https://lokeshdhakar.com/projects/lightbox2/#getting-started)-->
+        <article id="foto" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="nav-link-third" tabindex="0">
+            <h2 class="mb-5">Fotogalerie</h2>
+                <section class="row no-gutters">
+                    <div class="fotodiv col-6 col-md-3 d-flex flex-column">
+                        <a class="mt-2" href="images/foto1.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto1.jpg" alt="Pískoviště na zahradě" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto2.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto2.jpg" alt="Venkovní kuchyňka" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto24.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto24.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto3.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto3.jpg" alt="Ve vnitřních prostorách si děti mohou postavit hrad" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto4.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto4.jpg" alt="Zapojit se mohou i maminky s malými miminky v kočárku" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto5.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto5.jpg" alt="Uzavřený venkovní prostor mohou děti využít i pro ježdění na odrážedlech a kolech" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto31.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto31.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto32.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto32.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto33.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto33.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="fotodiv col-6 col-md-3 d-flex flex-column">
+                        <a class="mt-2" href="images/foto6.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto6.jpg" alt="Maminky i tatínkové se zapojili také při výrobě klobouků" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto7.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto7.jpg" alt="V čase vánočním nám hernu zdobí velký betlém" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto8.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto8.jpg" alt="Malování na plátno" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto9.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto9.jpg" alt="Stavění sněhuláka" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto10.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto10.jpg" alt="Bazének s míčky" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto21.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto21.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto22.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto22.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto23.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto23.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>    
+                    </div>
+                    <div class="fotodiv col-6 col-md-3 d-flex flex-column">
+                        <a class="mt-2" href="images/foto11.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto11.jpg" alt="Venkovní kuchyňka na hraní" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto12.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto12.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto13.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto13.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto14.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto14.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto15.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto15.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto26.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto26.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                    </div>
+                    <div class="fotodiv col-6 col-md-3 d-flex flex-column">
+                        <a class="mt-2" href="images/foto16.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto16.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto17.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto17.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto18.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto18.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto19.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto19.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto20.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto20.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto29.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto29.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto30.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto30.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto27.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto27.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                        <a class="mt-2" href="images/foto25.jpg" data-lightbox="example-set">
+                            <img class="foto" src="images/foto25.jpg" alt="Se stanem si děti užili spoustu legrace" class="img-fluid">
+                        </a>
+                    </div>
+                </section>
+        </article>
 
 
 
-            <section id="kontakty" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="nav-link-fourth" tabindex="0">
+        <article id="kontakty" class="collapse tab-pane fade" role="tabpanel" aria-labelledby="nav-link-fourth" tabindex="0">
                 <h2>Kontakty</h2>
                 <div class="mt-5">
                     <a href="https://www.facebook.com/Klub%C3%ADk-Hraj%C3%A1nek-1762043547385466/" target="_blank">
@@ -347,7 +402,7 @@
                     <b>Email:</b> <a style="color:black" href="mailto:info@hrajanek.cz">info@hrajanek.cz</a>
                 </div>
                 <div class="mb-3">
-                    <b>Telefon:</b> 775 031 995
+                    <b>Telefon:</b> <a class="link" href="tel:+420775031995">775 031 995</a>
                 </div>
                 <div>
                     <b>Číslo účtu:</b> 1032118964 / 5500
@@ -360,31 +415,33 @@
                         <img class="mapa mt-4 mb-3" src="images/mapa.png" alt="">
                     </a>
                 </div>
-            </section>
+        </article>
         
     </div>
+
+
     <div class="container d-flex justify-content-center">
         <div class="my-5" data-darujme-widget-token="6mbj89sskykv0ndp">&nbsp;</div>
     </div>
 
 
     <footer class="container mt-4 pt-4">
-            <div class="row">
-                <article class="col-12 col-md-6 mb-4">
+            <section class="row">
+                <div class="col-12 col-md-6 mb-4">
                     <div class="mb-3">
-                        Přihláška do klubu Skřítek Hrajánek ke <a class="odkaz" href="prihlaska.pdf" download="prihlaska-hrajanek.pdf">stažení</a>
+                        Přihláška do klubu Skřítek Hrajánek ke <a class="link" href="pdf/prihlaska.pdf" download="prihlaska-hrajanek.pdf">stažení</a>
                     </div>
                     <div class="mb-3">
-                        Návod na výrobu knihy pro děti ke <a class="odkaz" href="images/kniha.png" download="moje-kniha.png">stažení</a>
+                        Návod na výrobu knihy pro děti ke <a class="link" href="images/kniha.png" download="moje-kniha.png">stažení</a>
                     </div>
                     <div class="mb-3">
-                        Vnitřní řád Rodinného centra Společný stůl z.s. ke <a class="odkaz" href="rad.pdf" download="provozni-rad-spolecny-stul.pdf">stažení</a>
+                        Vnitřní řád Rodinného centra Společný stůl z.s. ke <a class="link" href="pdf/rad.pdf" download="provozni-rad-spolecny-stul.pdf">stažení</a>
                     </div>
                     <div>
-                        Zásady zpracování osobních údajů ke <a class="odkaz" href="gdpr.pdf" download="zasady-zpracovani-osobnich-udaju">stažení</a>
+                        Zásady zpracování osobních údajů ke <a class="link" href="pdf/gdpr.pdf" download="zasady-zpracovani-osobnich-udaju">stažení</a>
                     </div>
-                </article>
-                <article class="col-12 col-md-6">
+                </div>
+                <div class="col-12 col-md-6">
                     <div class="font-italic">
                         Všechen skutečný život spočívá v setkání.
                     </div>
@@ -397,16 +454,16 @@
                     <div class="font-italic">
                         (Evangelii gaudium, 169)
                     </div>
-                </article>
-            </div>
+                </div>
+            </section>
             <section class="text-center mt-5">
                 <div class="mb-5">
-                    <img class="obrpat mr-3" src="images/logo.jpg" alt="Logo Společný stůl z.s.">
+                    <img class="fotofooter mr-3" src="images/logo.jpg" alt="Logo Společný stůl z.s.">
                     <a href="https://sitprorodinu.cz/" target="_blank">
-                        <img class="obrpat1" src="images/logo-sit.jpg" alt="Logo Síť pro rodinu z.s. a přechod na hlavní stránku spolku">
+                        <img class="fotofooter1" src="images/logo-sit.jpg" alt="Logo Síť pro rodinu z.s. a přechod na hlavní stránku spolku">
                     </a>
                 </div>
-                <div class="sidlo mb-3">
+                <div class="mb-3">
                     <div>
                         Rodinné centrum Společný stůl, z.s.
                     </div>
@@ -423,11 +480,14 @@
                 </div>
             </section>
     </footer>
-        <script src="js/lightbox-plus-jquery.js">
-        </script>
 
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script type="text/javascript">
             +function(w, d, s, u, a, b) {
                 w['DarujmeObject'] = u;
@@ -437,27 +497,7 @@
                 b.parentNode.insertBefore(a, b);
             }(window, document, 'script', 'Darujme');
             Darujme(1, "6mbj89sskykv0ndp", 'render', "https:\/\/www.darujme.cz\/widget?token=6mbj89sskykv0ndp", "270px");
-        </script>
-       
-        <script>
-            $(rozklik).click(function(){
-              let long = document.getElementById ("long");
-            
-              if (long.style.display == "none") long.style.display = "block";
-                        else long.style.display = "none";
-            
-            });
-            
-            $(rozklikni).click(function(){
-              let lo = document.getElementById ("lo");
-            
-              if (lo.style.display == "none") lo.style.display = "block";
-                        else lo.style.display = "none";
-            
-            });
-            </script>
-
-        <script src="script.js"></script>
+    </script>
         
 </body>
 </html>
